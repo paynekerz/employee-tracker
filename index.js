@@ -111,12 +111,12 @@ addDepartment = () => {
       {
         name: 'name',
         type: 'input',
-        message: 'What is the name of the department?'
+        message: 'What is the department name?'
       },
       {
         name: 'id',
         type: 'input',
-        message: 'what is the ID of the department?'
+        message: 'what is the department ID?'
       }
     ])
     .then((answer) => {
@@ -170,13 +170,13 @@ updateEmployeeRole = () => {
               {
                   type:"list",
                   name:"update",
-                  message:"Which role would you like to update?",
+                  message:"Please choose a role to update.",
                   choices: choices
               },
               {
                   type:"input",
                   name:"newRole",
-                  message:"What would you like to rename this role?"
+                  message:"Whats the new name?"
               },
           ])
           .then(function(data){
